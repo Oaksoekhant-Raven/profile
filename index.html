@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oak portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="styel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Oak</h2>
+            <nav>
+                <ul id="menu-list" >
+                    <li><a onclick="addFunction()" href="#">Home</a></li>
+                    <li><a onclick="addFunction()" href="#book">Project</a></li>
+                    <li><a onclick="addFunction()" href="#topic">About</a></li>
+                </ul>
+            </nav>
+            <label id="icon" class="menu-bar">
+                <i onclick="addFunction()" class="fas fa-bars"></i>
+            </label>
+
+        </div>
+
+        <div class="para_1"> 
+            <h4 id="profile">Hi!I'm Oak Soe Khant</h4>
+            <h1 class="title">Junior Web Developer</h1>
+        </div>
+
+
+    </div>
+    <div class="main">
+        <h2 id="topic" data-aos="fade-down">About Me</h2>
+        <section class="card">
+            <div data-aos="fade-right">
+                <img src="./img/undraw_my_app_grf2.png" alt="" >
+
+            </div>
+
+    
+            <div class="car" data-aos="fade-left">
+                <p class="para">Hi! My name is Oak Soe Khant and I am web developer with a passion for front-end development.I aspire toward a career that will allow me to channel my creativity through building beautiful software and engaging experiences.</p>
+                <br>
+                <p class="para">I've been learning web development for about 1 year and these are the things that i learned.</p>
+                <p><i id="icon_1" class="fab fa-js-square"></i> Javascript</p>
+                <p><i id="icon_2" class="fab fa-css3-alt"></i> CSS</p>
+                <p><i id="icon_3" class="fab fa-html5"></i> HTML</p>
+                <p><i id="icon_4" class="fab fa-php"></i> PHP</p>
+                <p><i id="icon_5" class="fab fa-react"></i> Reactjs</p>
+                <p><i id="icon_6" class="fas fa-laptop-code"></i>Responsive web design</p>
+    
+    
+            </div>
+    
+        </section>
+
+    </div>
+    <div> 
+        <h2 id="post">Projects</h2>
+        <div class="project" id="book">
+            <div class="tab" >
+                <img src="./img/vue.png" alt="" class="image"><br>
+                <p style="margin-top: 10px;">Weather app with real world API(using ReactJs)</p>
+                
+            </div>
+            <div class="tab">
+                <img src="./img/Screenshot-1.png" alt="" class="image"><br>
+                <p style="margin-top: 10px;">Play Station Ordering Form(using PHP & MYSQL)<a href="https://play-tuto.herokuapp.com/"><button>Visit project</button></a></p>
+                
+            </div>
+            <div class="tab">
+                <img src="./img/dash.png" alt="" class="image"><br>
+                <p style="margin-top: 10px;">Admin dashboard(using HTML, CSS, Bootstrap)</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>Web Design By Oak.</h3>
+        <div class="end">
+            <a href="https://www.linkedin.com/in/oak-soe-khant-b440271b4/"><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="far fa-envelope"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          offset: 400,
+          duration: 1000
+      });
+    </script>
+    
+</body>
+</html>
